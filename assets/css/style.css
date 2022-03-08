@@ -6,9 +6,7 @@ body {
 .heading {
     text-align: center;
     font-size: 5rem;
-    color: #2f4f4f;
-    
-    
+    color: #2f4f4f;   
 }
 
 .container {
@@ -16,5 +14,26 @@ body {
     margin: 15rem;
     padding: 20rem;
     border-radius: 5px;
+}
 
+.grid {
+    background: #2f4f4f;
+    margin: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.cell {
+    background: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
 }
