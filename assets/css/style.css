@@ -1,6 +1,7 @@
 body {
     background: #2f4f4f;
     justify-content: center;
+
 }
 
 .heading {
@@ -33,3 +34,47 @@ body {
     padding: 2rem;
 }
 
+.player-turn {
+    font-size: 50px;
+    color: #dcdcdc;
+    text-align: right;
+    padding-right: 35rem;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 20px;
+  }
+  
+  .reset-button {
+    
+    font-size: 50px;
+    cursor: pointer;
+    color: #dcdcdc;
+    text-align: right;
+    padding-right: 35rem;
+  }
+  
+  .reset-button:hover {
+    color: #b2222b;
+  }
+
+
+  .x,
+  .o {
+      cursor: default;
+  }
+
+
+  .x::after {
+      content: "x";
+      font-size: 150px;
+  }
+
+  .o::after {
+    content: "o";
+    font-size: 150px;
+}
+
+
+  .won::after {
+      color: #b2222b;
+  }
