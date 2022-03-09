@@ -34,7 +34,12 @@ body {
     padding: 2rem;
 }
 
-.player-turn {
+.status {
+    margin-top: 25px;
+}
+
+
+.player {
     font-size: 50px;
     color: #dcdcdc;
     text-align: right;
