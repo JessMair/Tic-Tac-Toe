@@ -1,11 +1,9 @@
 // HTML Elements 
-const playerDiv = document.querySelector('.player');
-const reset-buttonDiv = document.querySelector('.reset-button');
-const cellDivs = document.querySelector('.cell')
+const playerDiv = document.getElementById('.player');
+const resetbuttonDiv = document.getElementById('.resetbutton');
+const cellDiv = getElementById('.cell');
 
 console.log(cellDiv);
-
-
 
 // Game 
 
@@ -13,14 +11,13 @@ let gameStarted = true;
 let xIsNext = true;
 
 
-
-
 //Event Handlers
-Const handleReset = (addEventListener) parameter {
+
+const handleReset = (Event) => {
     console.log(addEventListener);
 }
 
-Const handleCell = (addEventListener) parameter {
+const handleCell = (Event) => {
     const classList = e.target.classList;
     const location = addEventListener.classList[1];
 
@@ -29,21 +26,20 @@ Const handleCell = (addEventListener) parameter {
     }
 
     if (xIsNext) {
-        else.classList.add('x');
+        classList.add('x');
         xIsNext = !xIsNext;
-    }   else {
-        else.classList.add('o');
+    }   
+    else {    
+        classList.add('o');
         xIsNext = !xIsNext;
     }
-   
+    
   
 };
 
-
 //Event Listeners 
-
-resetDiv.addEventListner('click', handleReset);
+resetbuttonDiv.addEventListner('click', handleReset)
 
 for (const cellDiv of cellDiv) {
-    cellDiv.addEventListner('click' handleCell)
+    cellDiv.addEventListner('click', handleCell);
 }
