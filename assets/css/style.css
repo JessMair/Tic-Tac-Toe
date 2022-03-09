@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #2f4f4f;
     justify-content: center;
@@ -49,7 +54,7 @@ body {
     height: 20px;
   }
   
-  .resetbutton {
+  .reset {
     
     font-size: 50px;
     cursor: pointer;
@@ -58,7 +63,7 @@ body {
     padding-right: 35rem;
   }
   
-  .resetbutton:hover {
+  .reset:hover {
     color: #b2222b;
   }
 

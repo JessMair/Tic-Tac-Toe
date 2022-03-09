@@ -1,7 +1,7 @@
 // HTML Elements 
-const playerDiv = document.getElementById('.player');
-const resetbuttonDiv = document.getElementById('.resetbutton');
-const cellDiv = document.querySelectorAll('.cell');
+let playerDiv = document.getElementById('player');
+const resetDiv = document.getElementById('reset');
+const cellDiv = document.getElementsByTagName('cell');
 
 
 console.log(cellDiv);
@@ -14,6 +14,10 @@ const oSymbol = 'o';
 
 let gameStarted = true;
 let xIsNext = true;
+
+
+//Functions 
+
 
 
 //Event Handlers
@@ -42,11 +46,5 @@ const handleCell = (Event) => {
 };
 
 //Event Listeners 
-resetbuttonDiv.addEventListner('click', handleReset) 
-    console.log(Event.target)
-
-
-
-for (const cellDiv of cellDiv) {
-    cellDiv.addEventListner('click', handleCell);
-}
+reset.addEventListener('click', handleReset);
+    
